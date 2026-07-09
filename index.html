@@ -1,0 +1,2332 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="VPN Eye Care & Multispeciality Hospital - Advanced Eye Care & Comprehensive Healthcare under one trusted roof.">
+    <meta name="keywords"
+        content="VPN Eye Care, Multispeciality Hospital, Eye Hospital, Cataract Surgery, General Medicine">
+    <title>VPN Eye Care & Multispeciality Hospital</title>
+    <link rel="icon" href="Fav icon.png" type="image/png">
+
+    <!-- Open Graph Tags -->
+    <meta property="og:title" content="VPN Eye Care & Multispeciality Hospital">
+    <meta property="og:description"
+        content="Care You Can Trust. Advanced Eye Care & Comprehensive Multispeciality Healthcare.">
+    <meta property="og:type" content="website">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+    <!-- Schema.org -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "MedicalOrganization",
+      "name": "VPN Eye Care & Multispeciality Hospital",
+      "url": "https://www.vpneyecare.com",
+      "logo": "https://www.vpneyecare.com/logo.png",
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "+91-XXXXXXXXXX",
+        "contactType": "customer service"
+      }
+    }
+    </script>
+
+    <style>
+        :root {
+            /* Colors */
+            --primary: #1F497D;
+            --secondary: #169CB5;
+            --accent: #48C8D8;
+            --bg-light: #F8FBFD;
+            --white: #FFFFFF;
+            --text-dark: #333333;
+            --text-muted: #666666;
+            --gradient-btn: linear-gradient(135deg, #169CB5 0%, #1F497D 100%);
+
+            /* Typography */
+            --font-heading: 'Poppins', sans-serif;
+            --font-body: 'Nunito', sans-serif;
+
+            /* Shadows & Effects */
+            --shadow-soft: 0 10px 30px rgba(31, 73, 125, 0.08);
+            --shadow-hover: 0 20px 40px rgba(22, 156, 181, 0.15);
+            --glass-bg: rgba(255, 255, 255, 0.85);
+            --glass-border: rgba(255, 255, 255, 0.2);
+            --transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+        }
+
+        /* Base Styles */
+        html,
+        body {
+            width: 100%;
+            margin: 0;
+            padding: 0;
+            position: relative;
+            font-family: var(--font-body);
+            color: var(--text-dark);
+            background-color: var(--bg-light);
+            background-image:
+                linear-gradient(rgba(31, 73, 125, 0.03) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(31, 73, 125, 0.03) 1px, transparent 1px);
+            background-size: 40px 40px;
+            overflow-x: hidden;
+            /* Prevents any accidental horizontal scrolling */
+            -webkit-font-smoothing: antialiased;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            font-family: var(--font-heading);
+            font-weight: 700;
+            color: var(--primary);
+        }
+
+        section {
+            padding: 100px 0;
+            position: relative;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 60px;
+        }
+
+        .section-title h2 {
+            font-size: 2.5rem;
+            margin-bottom: 15px;
+            position: relative;
+            display: inline-block;
+        }
+
+        .section-title h2::after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 60px;
+            height: 4px;
+            background: var(--gradient-btn);
+            border-radius: 2px;
+        }
+
+        .section-title p {
+            color: var(--text-muted);
+            font-size: 1.3rem;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        /* Buttons */
+        .btn-premium {
+            background: var(--gradient-btn);
+            color: var(--white);
+            font-family: var(--font-heading);
+            font-weight: 600;
+            padding: 12px 30px;
+            border-radius: 50px;
+            border: none;
+            transition: var(--transition);
+            position: relative;
+            overflow: hidden;
+            z-index: 1;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        .btn-premium::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(135deg, #1F497D 0%, #169CB5 100%);
+            z-index: -1;
+            transition: opacity 0.4s ease;
+            opacity: 0;
+        }
+
+        .btn-premium:hover::before {
+            opacity: 1;
+        }
+
+        .btn-premium:hover {
+            color: var(--white);
+            box-shadow: 0 10px 20px rgba(22, 156, 181, 0.3);
+            transform: translateY(-3px);
+        }
+
+        .btn-outline-premium {
+            background: transparent;
+            color: var(--primary);
+            border: 2px solid var(--primary);
+            font-family: var(--font-heading);
+            font-weight: 600;
+            padding: 10px 28px;
+            border-radius: 50px;
+            transition: var(--transition);
+        }
+
+        .btn-outline-premium:hover {
+            background: var(--primary);
+            color: var(--white);
+            transform: translateY(-3px);
+        }
+
+        /* Top Ribbon */
+        .top-ribbon {
+            background: var(--primary);
+            color: var(--white);
+            padding: 8px 0;
+            font-size: 0.9rem;
+        }
+
+        .top-ribbon a {
+            color: var(--white);
+            text-decoration: none;
+            transition: var(--transition);
+        }
+
+        .top-ribbon a:hover {
+            color: var(--accent);
+        }
+
+        /* Navbar */
+        .navbar {
+            background: var(--glass-bg);
+            backdrop-filter: blur(15px);
+            -webkit-backdrop-filter: blur(15px);
+            border: 1px solid var(--glass-border);
+            padding: 10px 0;
+            transition: var(--transition);
+            margin: 0 auto 20px;
+            max-width: 96%;
+            border-radius: 0 0 50px 50px;
+            box-shadow: var(--shadow-soft);
+        }
+
+        .navbar.sticky-top {
+            box-shadow: var(--shadow-hover);
+            top: 0;
+        }
+
+        .navbar-brand {
+            font-family: var(--font-heading);
+            font-weight: 700;
+            color: var(--primary) !important;
+            font-size: 1.5rem;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .navbar-brand i {
+            color: var(--secondary);
+            font-size: 1.8rem;
+        }
+
+        .nav-link {
+            font-family: var(--font-heading);
+            font-weight: 500;
+            color: var(--text-dark) !important;
+            padding: 10px 15px !important;
+            transition: var(--transition);
+            position: relative;
+        }
+
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            bottom: 5px;
+            left: 15px;
+            width: 0;
+            height: 2px;
+            background: var(--secondary);
+            transition: var(--transition);
+        }
+
+        .nav-link:hover::after,
+        .nav-link.active::after {
+            width: calc(100% - 30px);
+        }
+
+        .nav-link:hover,
+        .nav-link.active {
+            color: var(--primary) !important;
+        }
+
+        /* Hero Section */
+        .hero {
+            min-height: 90vh;
+            display: flex;
+            align-items: center;
+            background: radial-gradient(circle at 100% 0%, rgba(22, 156, 181, 0.08) 0%, transparent 40%),
+                radial-gradient(circle at 0% 100%, rgba(31, 73, 125, 0.05) 0%, transparent 40%);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 10%;
+            right: 5%;
+            width: 400px;
+            height: 400px;
+            background: rgba(72, 200, 216, 0.1);
+            border-radius: 50%;
+            filter: blur(60px);
+            z-index: -1;
+        }
+
+        .hero h1 {
+            font-size: 4rem;
+            line-height: 1.2;
+            margin-bottom: 20px;
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .hero p {
+            font-size: 1.5rem;
+            color: var(--text-muted);
+            margin-bottom: 40px;
+            max-width: 500px;
+        }
+
+        .hero-images {
+            position: relative;
+            height: 600px;
+        }
+
+        .hero-img-main {
+            width: 80%;
+            border-radius: 30px;
+            box-shadow: var(--shadow-hover);
+            position: absolute;
+            right: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            z-index: 2;
+        }
+
+        .hero-img-sub {
+            width: 50%;
+            border-radius: 20px;
+            box-shadow: var(--shadow-soft);
+            position: absolute;
+            left: 0;
+            bottom: 10%;
+            z-index: 3;
+            border: 10px solid var(--bg-light);
+        }
+
+        .floating-icon {
+            position: absolute;
+            background: var(--white);
+            padding: 15px;
+            border-radius: 20px;
+            box-shadow: var(--shadow-soft);
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            z-index: 4;
+            animation: float 4s ease-in-out infinite;
+        }
+
+        .floating-icon.icon-1 {
+            top: 15%;
+            left: 10%;
+        }
+
+        .floating-icon.icon-2 {
+            bottom: 25%;
+            right: -5%;
+            animation-delay: 1s;
+        }
+
+        @keyframes float {
+            0% {
+                transform: translateY(0);
+            }
+
+            50% {
+                transform: translateY(-15px);
+            }
+
+            100% {
+                transform: translateY(0);
+            }
+        }
+
+        .floating-icon i {
+            font-size: 2rem;
+            color: var(--secondary);
+            background: rgba(22, 156, 181, 0.1);
+            width: 50px;
+            height: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+        }
+
+        .floating-icon span {
+            font-family: var(--font-heading);
+            font-weight: 600;
+            color: var(--primary);
+            font-size: 1.1rem;
+        }
+
+        /* Features / Why Choose Us */
+        .feature-card {
+            background: var(--white);
+            border-radius: 20px;
+            padding: 35px 25px;
+            text-align: center;
+            box-shadow: var(--shadow-soft);
+            transition: var(--transition);
+            height: 100%;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .feature-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 5px;
+            background: var(--gradient-btn);
+            transform: scaleX(0);
+            transform-origin: left;
+            transition: var(--transition);
+        }
+
+        .feature-card:hover {
+            transform: translateY(-10px);
+            box-shadow: var(--shadow-hover);
+        }
+
+        .feature-card:hover::before {
+            transform: scaleX(1);
+        }
+
+        .feature-icon {
+            width: 80px;
+            height: 80px;
+            background: rgba(22, 156, 181, 0.05);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 20px;
+            font-size: 2.5rem;
+            color: var(--secondary);
+            transition: var(--transition);
+        }
+
+        .feature-card:hover .feature-icon {
+            background: var(--secondary);
+            color: var(--white);
+            transform: scale(1.1) rotate(5deg);
+        }
+
+        .feature-card h4 {
+            font-size: 1.2rem;
+            margin-bottom: 15px;
+        }
+
+        .feature-card p {
+            color: var(--text-muted);
+            font-size: 0.95rem;
+            margin: 0;
+        }
+
+        /* About Section */
+        .about-section {
+            background: var(--white);
+        }
+
+        .about-image-wrapper {
+            position: relative;
+        }
+
+        .about-image {
+            width: 100%;
+            border-radius: 20px;
+            box-shadow: var(--shadow-soft);
+        }
+
+        .about-badge {
+            position: absolute;
+            bottom: -30px;
+            right: 30px;
+            background: var(--gradient-btn);
+            color: var(--white);
+            padding: 30px;
+            border-radius: 20px;
+            text-align: center;
+            box-shadow: var(--shadow-hover);
+        }
+
+        .about-badge h3 {
+            color: var(--white);
+            font-size: 2.5rem;
+            margin-bottom: 5px;
+        }
+
+        .about-badge span {
+            font-family: var(--font-heading);
+            font-size: 1.1rem;
+        }
+
+        .about-content h2 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+
+        .about-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        .about-list li {
+            margin-bottom: 15px;
+            display: flex;
+            align-items: flex-start;
+            gap: 15px;
+            font-size: 1.05rem;
+        }
+
+        .about-list li i {
+            color: var(--secondary);
+            margin-top: 5px;
+        }
+
+        /* Services */
+        .service-card {
+            background: var(--glass-bg);
+            border: 1px solid rgba(255, 255, 255, 0.4);
+            border-radius: 20px;
+            padding: 30px;
+            transition: var(--transition);
+            box-shadow: var(--shadow-soft);
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .service-card:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-hover);
+            background: var(--white);
+        }
+
+        .service-icon {
+            font-size: 3rem;
+            color: var(--primary);
+            margin-bottom: 20px;
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .service-card h4 {
+            font-size: 1.3rem;
+            margin-bottom: 15px;
+        }
+
+        .service-card p {
+            color: var(--text-muted);
+            margin-bottom: 20px;
+            flex-grow: 1;
+        }
+
+        .service-link {
+            color: var(--secondary);
+            font-family: var(--font-heading);
+            font-weight: 600;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 5px;
+            transition: var(--transition);
+        }
+
+        .service-link:hover {
+            color: var(--primary);
+            gap: 10px;
+        }
+
+        /* Doctors */
+        .doctor-section {
+            background: var(--white);
+        }
+
+        .doctor-card {
+            background: var(--white);
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: var(--shadow-soft);
+            transition: var(--transition);
+            text-align: center;
+        }
+
+
+
+        .doctor-img-wrapper {
+            position: relative;
+            overflow: hidden;
+            aspect-ratio: 3/4;
+        }
+
+        .doctor-img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: var(--transition);
+        }
+
+
+
+        .doctor-social {
+            position: absolute;
+            bottom: -50px;
+            left: 0;
+            width: 100%;
+            background: rgba(31, 73, 125, 0.9);
+            padding: 15px;
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            transition: var(--transition);
+        }
+
+
+
+        .doctor-social a {
+            color: var(--white);
+            width: 35px;
+            height: 35px;
+            background: rgba(255, 255, 255, 0.2);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            transition: var(--transition);
+        }
+
+        .doctor-social a:hover {
+            background: var(--secondary);
+        }
+
+        .doctor-info {
+            padding: 25px;
+        }
+
+        .doctor-info h4 {
+            margin-bottom: 5px;
+        }
+
+        .doctor-dept {
+            color: var(--secondary);
+            font-family: var(--font-heading);
+            font-weight: 500;
+            margin-bottom: 15px;
+            display: block;
+        }
+
+        /* Stats */
+        .stats-section {
+            background: var(--primary);
+            color: var(--white);
+            padding: 80px 0;
+            position: relative;
+        }
+
+        .stats-section::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url('data:image/svg+xml;utf8,<svg opacity="0.05" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><circle cx="50" cy="50" r="40" stroke="white" stroke-width="2" fill="none"/></svg>') repeat;
+            background-size: 200px;
+        }
+
+        .stat-item {
+            text-align: center;
+            position: relative;
+            z-index: 2;
+        }
+
+        .stat-icon {
+            font-size: 3rem;
+            color: var(--accent);
+            margin-bottom: 15px;
+        }
+
+        .stat-number {
+            font-family: var(--font-heading);
+            font-size: 3.5rem;
+            font-weight: 700;
+            line-height: 1;
+            margin-bottom: 10px;
+        }
+
+        .stat-text {
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+
+        /* Testimonials Marquee */
+        .reviews-marquee-wrapper {
+            overflow: hidden;
+            white-space: nowrap;
+            position: relative;
+            width: 100%;
+            padding: 20px 0;
+        }
+
+        .reviews-marquee-wrapper::before,
+        .reviews-marquee-wrapper::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            width: 150px;
+            height: 100%;
+            z-index: 2;
+        }
+
+        .reviews-marquee-wrapper::before {
+            left: 0;
+            background: linear-gradient(to right, var(--bg-light) 0%, transparent 100%);
+        }
+
+        .reviews-marquee-wrapper::after {
+            right: 0;
+            background: linear-gradient(to left, var(--bg-light) 0%, transparent 100%);
+        }
+
+        .reviews-marquee {
+            display: inline-block;
+            animation: scrollLeftToRight 40s linear infinite;
+        }
+
+        .reviews-marquee:hover {
+            animation-play-state: paused;
+        }
+
+        @keyframes scrollLeftToRight {
+            0% {
+                transform: translateX(-50%);
+            }
+
+            100% {
+                transform: translateX(0%);
+            }
+        }
+
+        .testimonial-card {
+            display: inline-block;
+            width: 400px;
+            white-space: normal;
+            vertical-align: top;
+            background: var(--white);
+            color: var(--text-dark);
+            padding: 35px;
+            border-radius: 20px;
+            box-shadow: var(--shadow-soft);
+            margin: 15px;
+            position: relative;
+            border-top: 4px solid var(--secondary);
+            transition: var(--transition);
+        }
+
+        .testimonial-card:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-hover);
+        }
+
+        .google-logo {
+            position: absolute;
+            top: 25px;
+            right: 25px;
+            width: 30px;
+        }
+
+        .stars {
+            color: #FFC107;
+            margin-bottom: 15px;
+            font-size: 1.1rem;
+        }
+
+        .testimonial-text {
+            font-size: 1rem;
+            line-height: 1.6;
+            color: var(--text-muted);
+            margin-bottom: 25px;
+            display: -webkit-box;
+            -webkit-line-clamp: 4;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+        }
+
+        .patient-info {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .patient-img {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+
+        .patient-details h5 {
+            margin: 0;
+            font-size: 1rem;
+            font-weight: 600;
+        }
+
+        .patient-details p {
+            margin: 0;
+            font-size: 0.85rem;
+            color: var(--text-muted);
+        }
+
+        /* Appointment Form (Dark Premium Theme) */
+        .appointment-section {
+            background: var(--primary);
+            position: relative;
+            padding: 100px 0;
+        }
+
+        .appointment-section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url('https://images.unsplash.com/photo-1551076805-e18690c5e4c4?auto=format&fit=crop&q=80&w=1920') center/cover;
+            opacity: 0.15;
+            z-index: 0;
+        }
+
+        .appointment-container {
+            position: relative;
+            z-index: 2;
+        }
+
+        .appointment-box {
+            background: var(--white);
+            border-radius: 20px;
+            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.3);
+            padding: 50px;
+            position: relative;
+        }
+
+        .appointment-heading {
+            color: var(--white);
+            margin-bottom: 20px;
+        }
+
+        .appointment-subheading {
+            color: rgba(255, 255, 255, 0.8);
+            font-size: 1.1rem;
+        }
+
+        .appointment-info {
+            background: var(--gradient-btn);
+            border-radius: 20px;
+            padding: 40px;
+            color: var(--white);
+            height: 100%;
+        }
+
+        .appointment-info h3 {
+            color: var(--white);
+            margin-bottom: 20px;
+        }
+
+        .info-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 15px;
+            margin-bottom: 25px;
+        }
+
+        .info-item i {
+            font-size: 1.5rem;
+            color: var(--accent);
+            margin-top: 3px;
+        }
+
+        .form-control,
+        .form-select {
+            padding: 15px 20px;
+            border-radius: 10px;
+            border: 1px solid #E0E0E0;
+            background: var(--bg-light);
+            font-family: var(--font-body);
+            transition: var(--transition);
+        }
+
+        .form-control:focus,
+        .form-select:focus {
+            box-shadow: 0 0 0 3px rgba(22, 156, 181, 0.2);
+            border-color: var(--secondary);
+            background: var(--white);
+        }
+
+        /* Gallery Section */
+        .gallery-section {
+            background: var(--bg-light);
+            padding: 80px 0;
+            overflow: hidden;
+        }
+
+        .gallery-marquee-wrapper {
+            position: relative;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            padding: 20px 0;
+        }
+
+        .gallery-marquee-track {
+            display: flex;
+            gap: 20px;
+            width: max-content;
+            animation: scrollRightToLeft 30s linear infinite;
+        }
+
+        .gallery-marquee-track:hover {
+            animation-play-state: paused;
+        }
+
+
+
+        @keyframes scrollRightToLeft {
+            0% {
+                transform: translateX(0);
+            }
+
+            100% {
+                transform: translateX(calc(-50% - 10px));
+            }
+        }
+
+        .gallery-item {
+            width: 400px;
+            height: 260px;
+            border-radius: 15px;
+            overflow: hidden;
+            position: relative;
+            cursor: pointer;
+            flex-shrink: 0;
+            box-shadow: var(--shadow-soft);
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: var(--transition);
+        }
+
+        .gallery-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(31, 73, 125, 0.6);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            opacity: 0;
+            transition: var(--transition);
+            z-index: 2;
+        }
+
+        .gallery-overlay i {
+            color: var(--white);
+            font-size: 2rem;
+            transform: translateY(20px);
+            transition: var(--transition);
+        }
+
+        /* Packages */
+        .pricing-card {
+            background: var(--white);
+            border-radius: 20px;
+            padding: 40px 30px;
+            text-align: center;
+            box-shadow: var(--shadow-soft);
+            transition: var(--transition);
+            border: 1px solid rgba(0, 0, 0, 0.05);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .pricing-card:hover {
+            transform: translateY(-15px);
+            box-shadow: var(--shadow-hover);
+            border-color: var(--secondary);
+        }
+
+        .pricing-card.popular::before {
+            content: 'Most Popular';
+            position: absolute;
+            top: 20px;
+            right: -35px;
+            background: var(--secondary);
+            color: var(--white);
+            padding: 5px 40px;
+            transform: rotate(45deg);
+            font-size: 0.8rem;
+            font-weight: 600;
+        }
+
+        .package-icon {
+            font-size: 3rem;
+            color: var(--primary);
+            margin-bottom: 20px;
+        }
+
+        .price {
+            font-size: 2.5rem;
+            font-family: var(--font-heading);
+            font-weight: 700;
+            color: var(--primary);
+            margin: 20px 0;
+        }
+
+        .price span {
+            font-size: 1rem;
+            color: var(--text-muted);
+            font-weight: 400;
+        }
+
+        .package-features {
+            list-style: none;
+            padding: 0;
+            margin: 0 0 30px 0;
+            text-align: left;
+        }
+
+        .package-features li {
+            margin-bottom: 12px;
+            color: var(--text-muted);
+            display: flex;
+            gap: 10px;
+            align-items: center;
+        }
+
+        .package-features li i {
+            color: var(--secondary);
+        }
+
+        /* FAQ */
+        .accordion-item {
+            border: none;
+            background: var(--white);
+            border-radius: 15px !important;
+            margin-bottom: 15px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.03);
+            overflow: hidden;
+        }
+
+        .accordion-button {
+            font-family: var(--font-heading);
+            font-weight: 600;
+            color: var(--primary);
+            padding: 20px 25px;
+            background: var(--white);
+            box-shadow: none !important;
+        }
+
+        .accordion-button:not(.collapsed) {
+            background: var(--bg-light);
+            color: var(--secondary);
+        }
+
+        .accordion-button::after {
+            background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%231F497D'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+        }
+
+        .accordion-body {
+            color: var(--text-muted);
+            padding: 20px 25px;
+            background: var(--bg-light);
+        }
+
+        /* Footer */
+        .footer {
+            background: var(--primary);
+            color: var(--white);
+            padding: 80px 0 30px;
+        }
+
+        .footer-logo {
+            font-family: var(--font-heading);
+            font-size: 1.8rem;
+            font-weight: 700;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 20px;
+            color: var(--white);
+        }
+
+        .footer-logo i {
+            color: var(--accent);
+        }
+
+        .footer p {
+            color: rgba(255, 255, 255, 0.7);
+        }
+
+        .footer-title {
+            color: var(--white);
+            font-family: var(--font-heading);
+            font-size: 1.2rem;
+            margin-bottom: 25px;
+            position: relative;
+            padding-bottom: 10px;
+        }
+
+        .footer-title::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 40px;
+            height: 3px;
+            background: var(--secondary);
+        }
+
+        .footer-links {
+            list-style: none;
+            padding: 0;
+        }
+
+        .footer-links li {
+            margin-bottom: 12px;
+        }
+
+        .footer-links a {
+            color: rgba(255, 255, 255, 0.7);
+            text-decoration: none;
+            transition: var(--transition);
+            display: inline-block;
+        }
+
+        .footer-links a:hover {
+            color: var(--accent);
+            transform: translateX(5px);
+        }
+
+        .footer-contact li {
+            display: flex;
+            gap: 15px;
+            margin-bottom: 15px;
+            color: rgba(255, 255, 255, 0.7);
+        }
+
+        .footer-contact i {
+            color: var(--accent);
+            margin-top: 5px;
+        }
+
+        .social-icons {
+            display: flex;
+            gap: 15px;
+            margin-top: 25px;
+        }
+
+        .social-icons a {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.1);
+            color: var(--white);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            transition: var(--transition);
+        }
+
+        .social-icons a:hover {
+            background: var(--secondary);
+            transform: translateY(-3px);
+        }
+
+        .copyright {
+            text-align: center;
+            padding-top: 30px;
+            margin-top: 50px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            color: rgba(255, 255, 255, 0.6);
+        }
+
+        /* Floating Elements */
+        .floating-whatsapp {
+            position: fixed;
+            bottom: 30px;
+            left: 30px;
+            width: 60px;
+            height: 60px;
+            background: #25D366;
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 35px;
+            box-shadow: 0 10px 20px rgba(37, 211, 102, 0.3);
+            z-index: 1000;
+            transition: var(--transition);
+            text-decoration: none;
+        }
+
+        .floating-whatsapp:hover {
+            transform: scale(1.1);
+            color: white;
+        }
+
+        .scroll-top {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            width: 50px;
+            height: 50px;
+            background: var(--primary);
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 20px;
+            box-shadow: var(--shadow-soft);
+            z-index: 1000;
+            transition: var(--transition);
+            text-decoration: none;
+            opacity: 0;
+            visibility: hidden;
+        }
+
+        .scroll-top.show {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        .scroll-top:hover {
+            background: var(--secondary);
+            color: white;
+            transform: translateY(-5px);
+        }
+
+
+        /* Floating Background Icons */
+        .floating-bg-icons {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            z-index: -1;
+            overflow: hidden;
+        }
+
+        .icon-float {
+            position: absolute;
+            font-size: 3rem;
+            color: rgba(31, 73, 125, 0.06);
+            animation: float-around 25s infinite linear;
+        }
+
+        @keyframes float-around {
+            0% {
+                transform: translate(0, 0) rotate(0deg) scale(1);
+            }
+
+            33% {
+                transform: translate(50px, -50px) rotate(120deg) scale(1.1);
+            }
+
+            66% {
+                transform: translate(-30px, 40px) rotate(240deg) scale(0.9);
+            }
+
+            100% {
+                transform: translate(0, 0) rotate(360deg) scale(1);
+            }
+        }
+
+        /* Animations */
+        .fade-up {
+            opacity: 0;
+            transform: translateY(40px);
+            transition: opacity 0.8s ease, transform 0.8s ease;
+        }
+
+        .fade-left {
+            opacity: 0;
+            transform: translateX(-40px);
+            transition: opacity 0.8s ease, transform 0.8s ease;
+        }
+
+        .fade-right {
+            opacity: 0;
+            transform: translateX(40px);
+            transition: opacity 0.8s ease, transform 0.8s ease;
+        }
+
+        .fade-up.visible,
+        .fade-left.visible,
+        .fade-right.visible {
+            opacity: 1;
+            transform: translate(0);
+        }
+
+        /* Placeholder Images CSS Backgrounds (Since real images aren't available) */
+        .img-placeholder {
+            background: linear-gradient(135deg, #e0eaf5 0%, #f4f8fb 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--text-muted);
+            font-family: var(--font-heading);
+        }
+
+        /* Media Queries for Mobile Responsiveness */
+        @media (max-width: 768px) {
+            .top-ribbon .d-flex {
+                flex-direction: column;
+                gap: 8px;
+                text-align: center;
+            }
+
+            .top-ribbon a.me-4 {
+                margin-right: 15px !important;
+            }
+
+            .navbar-brand img {
+                max-width: 180px !important;
+            }
+
+            .navbar-toggler {
+                margin-left: auto;
+            }
+
+            .hero {
+                padding-top: 40px;
+                text-align: center;
+            }
+
+            .hero h1 {
+                font-size: 2.2rem;
+            }
+
+            .hero p {
+                font-size: 1rem;
+                margin-bottom: 25px;
+            }
+
+            .hero .d-flex {
+                justify-content: center;
+                gap: 15px !important;
+            }
+
+            .hero-images {
+                height: 380px;
+                margin-top: 40px;
+            }
+
+            .hero-img-main {
+                height: 300px !important;
+                width: 85%;
+                top: 0;
+                right: 0;
+                left: auto;
+                transform: none;
+            }
+
+            .hero-img-sub {
+                height: 180px !important;
+                width: 60%;
+                bottom: 0;
+                left: 0;
+                transform: none;
+                z-index: 5;
+            }
+
+            .section-title h2 {
+                font-size: 1.8rem;
+            }
+
+            .about-badge {
+                padding: 15px;
+                bottom: -15px;
+                right: 15px;
+            }
+
+            .about-badge h3 {
+                font-size: 1.5rem;
+            }
+
+            .pricing-card {
+                margin-bottom: 20px;
+            }
+
+            .testimonial-card {
+                width: 300px;
+                padding: 20px;
+            }
+
+            .gallery-item {
+                width: 300px;
+                height: 200px;
+            }
+
+            .appointment-box {
+                padding: 25px;
+            }
+
+            .stats-section .stat-item {
+                margin-bottom: 20px;
+            }
+
+            .floating-icon {
+                display: none;
+            }
+
+            /* Hide floating icons on mobile to prevent overlap */
+            .floating-whatsapp {
+                width: 50px;
+                height: 50px;
+                font-size: 25px;
+                bottom: 20px;
+                left: 20px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Floating Background Icons -->
+    <div class="floating-bg-icons d-none d-md-block">
+        <i class="fa-solid fa-notes-medical icon-float" style="top: 15%; left: 8%; animation-delay: 0s;"></i>
+        <i class="fa-solid fa-heart-pulse icon-float" style="top: 60%; left: 5%; animation-delay: -5s;"></i>
+        <i class="fa-solid fa-stethoscope icon-float" style="top: 25%; right: 12%; animation-delay: -10s;"></i>
+        <i class="fa-solid fa-pills icon-float" style="top: 75%; right: 8%; animation-delay: -15s;"></i>
+        <i class="fa-solid fa-tooth icon-float" style="top: 85%; left: 35%; animation-delay: -8s;"></i>
+        <i class="fa-solid fa-eye icon-float" style="top: 10%; right: 35%; animation-delay: -2s;"></i>
+        <i class="fa-solid fa-syringe icon-float" style="top: 50%; right: 25%; animation-delay: -12s;"></i>
+        <i class="fa-solid fa-user-doctor icon-float" style="top: 40%; left: 25%; animation-delay: -18s;"></i>
+    </div>
+
+
+    <!-- Emergency Ribbon -->
+    <div class="top-ribbon">
+        <div class="container d-flex justify-content-between align-items-center">
+            <div>
+                <i class="fa-solid fa-clock me-2"></i> Mon - Sat: 8:00 AM - 9:00 PM
+            </div>
+            <div>
+                <a href="tel:+91XXXXXXXXXX" class="me-4"><i class="fa-solid fa-phone me-2"></i> +91 XXXXX XXXXX</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg sticky-top" id="navbar">
+        <div class="container position-relative">
+            <!-- Logo (Desktop & Mobile) -->
+            <a class="navbar-brand d-flex align-items-center py-2 pe-4" href="#">
+                <img src="logo.png" alt="Logo"
+                    style="max-height: 140px; max-width: 320px; width: auto; object-fit: contain;">
+            </a>
+
+            <!-- Mobile Toggle -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Navigation Links -->
+            <div class="collapse navbar-collapse w-100 p-3 p-lg-0" id="navbarNav">
+                <ul class="navbar-nav ms-auto align-items-lg-center">
+                    <li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#doctors">Doctors</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#gallery">Gallery</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                    <li class="nav-item ms-lg-4 mt-3 mt-lg-0"><a href="#appointment"
+                            class="btn-premium w-100 text-center">Book Appointment</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 fade-left">
+                    <div class="mb-4">
+                        <span class="badge bg-light text-primary rounded-pill px-3 py-2 mb-3 border">
+                            <i class="fa-solid fa-star text-warning me-2"></i> Top Rated Hospital in Tamil Nadu
+                        </span>
+                    </div>
+                    <h1>Your Vision,<br>Our Commitment.</h1>
+                    <p>Advanced Eye Care & Comprehensive Multispeciality Healthcare under one trusted roof.</p>
+                    <div class="d-flex gap-3 flex-wrap">
+                        <a href="#appointment" class="btn-premium">Book Appointment</a>
+                        <a href="tel:+91XXXXXXXXXX" class="btn-outline-premium">Call Now</a>
+                    </div>
+                </div>
+                <div class="col-lg-6 mt-5 mt-lg-0 fade-right">
+                    <div class="hero-images">
+                        <!-- Real stock images -->
+                        <img src="images/Home Page Images/H1.JPG" alt="Doctor Examining Patient" class="hero-img-main"
+                            style="height: 500px; object-fit: cover;">
+                        <img src="images/Home Page Images/H2.JPG" alt="Modern Medical Equipment" class="hero-img-sub"
+                            style="height: 300px; object-fit: cover;">
+
+                        <div class="floating-icon icon-1">
+                            <i class="fa-solid fa-eye"></i>
+                            <div>
+                                <span>Advanced</span>
+                                <p class="mb-0 text-muted small">Eye Care</p>
+                            </div>
+                        </div>
+                        <div class="floating-icon icon-2">
+                            <i class="fa-solid fa-heart-pulse"></i>
+                            <div>
+                                <span>Multispeciality</span>
+                                <p class="mb-0 text-muted small">Services</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose VPN -->
+    <section id="why-choose" class="bg-white">
+        <div class="container">
+            <div class="section-title fade-up">
+                <h2>Why Choose VPN</h2>
+                <p>We combine advanced medical technology with compassionate care to deliver the best health outcomes
+                    for our patients.</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6 fade-up" style="transition-delay: 0.1s;">
+                    <div class="feature-card">
+                        <div class="feature-icon"><i class="fa-solid fa-user-doctor"></i></div>
+                        <h4>Experienced Specialists</h4>
+                        <p>Our team comprises highly qualified and experienced doctors across various specialties.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 fade-up" style="transition-delay: 0.2s;">
+                    <div class="feature-card">
+                        <div class="feature-icon"><i class="fa-solid fa-microscope"></i></div>
+                        <h4>Advanced Diagnostics</h4>
+                        <p>Equipped with state-of-the-art diagnostic tools for accurate and early disease detection.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 fade-up" style="transition-delay: 0.3s;">
+                    <div class="feature-card">
+                        <div class="feature-icon"><i class="fa-solid fa-hospital"></i></div>
+                        <h4>Latest Surgical Technology</h4>
+                        <p>Modern operation theatres equipped with advanced surgical equipment for safe procedures.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 fade-up" style="transition-delay: 0.4s;">
+                    <div class="feature-card">
+                        <div class="feature-icon"><i class="fa-solid fa-truck-medical"></i></div>
+                        <h4>24×7 Emergency</h4>
+                        <p>Round-the-clock emergency services with dedicated staff.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 fade-up" style="transition-delay: 0.5s;">
+                    <div class="feature-card">
+                        <div class="feature-icon"><i class="fa-solid fa-hand-holding-dollar"></i></div>
+                        <h4>Affordable Care</h4>
+                        <p>Premium healthcare services accessible to everyone with transparent pricing.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 fade-up" style="transition-delay: 0.6s;">
+                    <div class="feature-card">
+                        <div class="feature-icon"><i class="fa-solid fa-hands-holding-child"></i></div>
+                        <h4>Patient First Approach</h4>
+                        <p>We prioritize patient comfort, safety, and personalized care throughout their journey.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about-section" id="about">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 mb-5 mb-lg-0 fade-right">
+                    <div class="about-image-wrapper">
+                        <img src="images/Home Page Images/H3.JPG" alt="Hospital Building Exterior" class="about-image"
+                            style="height: 600px; object-fit: cover;">
+                        <div class="about-badge">
+                            <h3>23</h3>
+                            <span>Years of<br>Experience</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 ps-lg-5 fade-left">
+                    <div class="about-content">
+                        <h2>World-Class Healthcare With Compassion</h2>
+                        <p class="lead mb-4">VPN Eye Care & Multispeciality Hospital is committed to delivering
+                            world-class healthcare with compassion, innovation, and excellence.</p>
+                        <p class="text-muted mb-4">Our experienced doctors, advanced technology, and patient-centered
+                            approach ensure quality treatment for every individual. We bridge the gap between premium
+                            healthcare and affordability.</p>
+
+                        <ul class="about-list mb-5">
+                            <li>
+                                <i class="fa-solid fa-check-circle"></i>
+                                <div>
+                                    <strong>Mission</strong>
+                                    <p class="text-muted mb-0">To provide accessible, high-quality, and ethical
+                                        healthcare services.</p>
+                                </div>
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-check-circle"></i>
+                                <div>
+                                    <strong>Vision</strong>
+                                    <p class="text-muted mb-0">To be the most trusted healthcare institution in the
+                                        region.</p>
+                                </div>
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-check-circle"></i>
+                                <div>
+                                    <strong>Values</strong>
+                                    <p class="text-muted mb-0">Integrity, Compassion, Excellence, and Teamwork.</p>
+                                </div>
+                            </li>
+                        </ul>
+
+                        <a href="#" class="btn-premium">Read More About Us</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Eye Care Services -->
+    <section id="services">
+        <div class="container">
+            <div class="section-title fade-up">
+                <h2>Eye Care Services</h2>
+                <p>Comprehensive ophthalmology services utilizing advanced technology for precise diagnostics and
+                    treatment.</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6 fade-up">
+                    <div class="service-card">
+                        <div class="service-icon"><i class="fa-solid fa-eye"></i></div>
+                        <h4>Cataract Surgery</h4>
+                        <p>Advanced Phacoemulsification and Micro-Incision Cataract Surgery (MICS) with premium IOL
+                            implantation.</p>
+                        <a href="#" class="service-link">Learn More <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 fade-up" style="transition-delay: 0.2s;">
+                    <div class="service-card">
+                        <div class="service-icon"><i class="fa-solid fa-eye-dropper"></i></div>
+                        <h4>Retina Treatment</h4>
+                        <p>Expert management of Diabetic Retinopathy, Macular Degeneration, and Retinal Detachments.</p>
+                        <a href="#" class="service-link">Learn More <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 fade-up">
+                    <div class="service-card">
+                        <div class="service-icon"><i class="fa-solid fa-compress"></i></div>
+                        <h4>Glaucoma Care</h4>
+                        <p>Early detection and comprehensive management of Glaucoma to prevent vision loss.</p>
+                        <a href="#" class="service-link">Learn More <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 fade-up" style="transition-delay: 0.1s;">
+                    <div class="service-card">
+                        <div class="service-icon"><i class="fa-solid fa-child"></i></div>
+                        <h4>Pediatric Ophthalmology</h4>
+                        <p>Specialized eye care for children including squint evaluation and lazy eye treatment.</p>
+                        <a href="#" class="service-link">Learn More <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 fade-up" style="transition-delay: 0.2s;">
+                    <div class="service-card">
+                        <div class="service-icon"><i class="fa-solid fa-laptop-medical"></i></div>
+                        <h4>Computer Vision Syndrome</h4>
+                        <p>Diagnosis and relief for digital eye strain and associated dry eye problems.</p>
+                        <a href="#" class="service-link">Learn More <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Multispeciality Services -->
+    <section class="bg-white">
+        <div class="container">
+            <div class="section-title fade-up">
+                <h2>Multispeciality Services</h2>
+                <p>A multidisciplinary approach providing holistic healthcare under one roof.</p>
+            </div>
+            <div class="row g-4">
+                <!-- Using icons for multispeciality -->
+                <div class="col-lg-4 col-md-4 col-12 fade-up">
+                    <div class="feature-card py-4">
+                        <div class="feature-icon mb-3" style="width: 60px; height: 60px; font-size: 1.8rem;"><i
+                                class="fa-solid fa-eye"></i></div>
+                        <h4 class="fs-6">Ophthalmology</h4>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-12 fade-up" style="transition-delay: 0.1s;">
+                    <div class="feature-card py-4">
+                        <div class="feature-icon mb-3" style="width: 60px; height: 60px; font-size: 1.8rem;"><i
+                                class="fa-solid fa-bone"></i></div>
+                        <h4 class="fs-6">Orthopaedics</h4>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-12 fade-up" style="transition-delay: 0.2s;">
+                    <div class="feature-card py-4">
+                        <div class="feature-icon mb-3" style="width: 60px; height: 60px; font-size: 1.8rem;"><i
+                                class="fa-solid fa-stethoscope"></i></div>
+                        <h4 class="fs-6">General Medicine</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Doctors -->
+    <section class="doctor-section" id="doctors">
+        <div class="container">
+            <div class="section-title fade-up">
+                <h2>Our Specialists</h2>
+                <p>Meet our team of experienced and dedicated doctors committed to your well-being.</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-3 col-md-6 fade-up">
+                    <div class="doctor-card">
+                        <div class="doctor-img-wrapper">
+                            <img src="https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?auto=format&fit=crop&q=80&w=400"
+                                alt="Doctor" class="doctor-img">
+                            <div class="doctor-social">
+                                <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                                <a href="#"><i class="fa-solid fa-envelope"></i></a>
+                            </div>
+                        </div>
+                        <div class="doctor-info">
+                            <h4>Dr. Sharma</h4>
+                            <span class="doctor-dept">Chief Ophthalmologist</span>
+                            <p class="text-muted small mb-3">MS, DNB, FICO (UK)<br>15+ Years Experience</p>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 fade-up" style="transition-delay: 0.1s;">
+                    <div class="doctor-card">
+                        <div class="doctor-img-wrapper">
+                            <img src="https://images.unsplash.com/photo-1594824436998-d40d5926c4f0?auto=format&fit=crop&q=80&w=400"
+                                alt="Doctor" class="doctor-img">
+                            <div class="doctor-social">
+                                <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                                <a href="#"><i class="fa-solid fa-envelope"></i></a>
+                            </div>
+                        </div>
+                        <div class="doctor-info">
+                            <h4>Dr. Patel</h4>
+                            <span class="doctor-dept">Retina Specialist</span>
+                            <p class="text-muted small mb-3">MS, FVRS<br>12+ Years Experience</p>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 fade-up" style="transition-delay: 0.2s;">
+                    <div class="doctor-card">
+                        <div class="doctor-img-wrapper">
+                            <img src="https://images.unsplash.com/photo-1622253692010-333f2da6031d?auto=format&fit=crop&q=80&w=400"
+                                alt="Doctor" class="doctor-img">
+                            <div class="doctor-social">
+                                <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                                <a href="#"><i class="fa-solid fa-envelope"></i></a>
+                            </div>
+                        </div>
+                        <div class="doctor-info">
+                            <h4>Dr. Iyer</h4>
+                            <span class="doctor-dept">General Physician</span>
+                            <p class="text-muted small mb-3">MD (Medicine)<br>10+ Years Experience</p>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 fade-up" style="transition-delay: 0.3s;">
+                    <div class="doctor-card">
+                        <div class="doctor-img-wrapper">
+                            <img src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?auto=format&fit=crop&q=80&w=400"
+                                alt="Doctor" class="doctor-img">
+                            <div class="doctor-social">
+                                <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                                <a href="#"><i class="fa-solid fa-envelope"></i></a>
+                            </div>
+                        </div>
+                        <div class="doctor-info">
+                            <h4>Dr. Menon</h4>
+                            <span class="doctor-dept">Pediatrician</span>
+                            <p class="text-muted small mb-3">MD (Pediatrics)<br>8+ Years Experience</p>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="gallery-section">
+        <div class="container">
+            <div class="section-title fade-up">
+                <h2>Our Gallery</h2>
+                <p>Take a tour of our state-of-the-art facilities and infrastructure.</p>
+            </div>
+        </div>
+
+        <div class="gallery-marquee-wrapper fade-up">
+            <div class="gallery-marquee-track" style="animation-duration: 60s;">
+                <!-- Full Set of 9 Images -->
+                <div class="gallery-item" onclick="openGalleryModal(this)"><img src="images/Gallery/g1.JPG"
+                        alt="Gallery Image 1"></div>
+                <div class="gallery-item" onclick="openGalleryModal(this)"><img src="images/Gallery/g2.JPG"
+                        alt="Gallery Image 2"></div>
+                <div class="gallery-item" onclick="openGalleryModal(this)"><img src="images/Gallery/g3.JPG"
+                        alt="Gallery Image 3"></div>
+                <div class="gallery-item" onclick="openGalleryModal(this)"><img src="images/Gallery/g4.JPG"
+                        alt="Gallery Image 4"></div>
+                <div class="gallery-item" onclick="openGalleryModal(this)"><img src="images/Gallery/g5.JPG"
+                        alt="Gallery Image 5"></div>
+                <div class="gallery-item" onclick="openGalleryModal(this)"><img src="images/Gallery/g6.JPG"
+                        alt="Gallery Image 6"></div>
+                <div class="gallery-item" onclick="openGalleryModal(this)"><img src="images/Gallery/g7.JPG"
+                        alt="Gallery Image 7"></div>
+                <div class="gallery-item" onclick="openGalleryModal(this)"><img src="images/Gallery/g8.JPG"
+                        alt="Gallery Image 8"></div>
+                <div class="gallery-item" onclick="openGalleryModal(this)"><img src="images/Gallery/g9.JPG"
+                        alt="Gallery Image 9"></div>
+
+                <!-- Duplicate Set for Seamless Loop -->
+                <div class="gallery-item" onclick="openGalleryModal(this)"><img src="images/Gallery/g1.JPG"
+                        alt="Gallery Image 1"></div>
+                <div class="gallery-item" onclick="openGalleryModal(this)"><img src="images/Gallery/g2.JPG"
+                        alt="Gallery Image 2"></div>
+                <div class="gallery-item" onclick="openGalleryModal(this)"><img src="images/Gallery/g3.JPG"
+                        alt="Gallery Image 3"></div>
+                <div class="gallery-item" onclick="openGalleryModal(this)"><img src="images/Gallery/g4.JPG"
+                        alt="Gallery Image 4"></div>
+                <div class="gallery-item" onclick="openGalleryModal(this)"><img src="images/Gallery/g5.JPG"
+                        alt="Gallery Image 5"></div>
+                <div class="gallery-item" onclick="openGalleryModal(this)"><img src="images/Gallery/g6.JPG"
+                        alt="Gallery Image 6"></div>
+                <div class="gallery-item" onclick="openGalleryModal(this)"><img src="images/Gallery/g7.JPG"
+                        alt="Gallery Image 7"></div>
+                <div class="gallery-item" onclick="openGalleryModal(this)"><img src="images/Gallery/g8.JPG"
+                        alt="Gallery Image 8"></div>
+                <div class="gallery-item" onclick="openGalleryModal(this)"><img src="images/Gallery/g9.JPG"
+                        alt="Gallery Image 9"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Modal -->
+    <div class="modal fade" id="galleryModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-xl modal-dialog-centered">
+            <div class="modal-content bg-transparent border-0">
+                <div class="modal-header border-0 pb-0">
+                    <button type="button" class="btn-close btn-close-white ms-auto" data-bs-dismiss="modal"
+                        aria-label="Close"></button>
+                </div>
+                <div class="modal-body text-center p-0">
+                    <img src="" id="modalImage" class="img-fluid rounded shadow-lg" alt="Gallery Image"
+                        style="max-height: 85vh; object-fit: contain;">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Stats Section -->
+    <section class="stats-section" id="stats">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-4 col-12 stat-item fade-up">
+                    <i class="fa-solid fa-users stat-icon"></i>
+                    <div class="stat-number" data-target="50000" data-suffix="+">0</div>
+                    <div class="stat-text">Happy Patients</div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-12 stat-item fade-up" style="transition-delay: 0.1s;">
+                    <i class="fa-solid fa-user-doctor stat-icon"></i>
+                    <div class="stat-number" data-target="6" data-suffix="+">0</div>
+                    <div class="stat-text">Expert Doctors</div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-12 stat-item fade-up" style="transition-delay: 0.2s;">
+                    <i class="fa-solid fa-award stat-icon"></i>
+                    <div class="stat-number" data-target="99" data-suffix="%">0</div>
+                    <div class="stat-text">Success Rate (%)</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section (Google Reviews) -->
+    <section id="testimonials">
+        <div class="container">
+            <div class="section-title fade-up">
+                <h2>Patient Reviews</h2>
+                <p>Read what our patients have to say about their experience. Real reviews fetched automatically.</p>
+            </div>
+        </div>
+
+        <!-- Marquee Wrapper -->
+        <div class="reviews-marquee-wrapper fade-up">
+            <div class="reviews-marquee" id="googleReviewsContainer">
+                <!-- Reviews will be injected here via JavaScript -->
+                <!-- Loading State -->
+                <div class="text-center w-100" style="display:inline-block; padding: 40px;">
+                    <div class="spinner-border text-primary" role="status">
+                        <span class="visually-hidden">Loading reviews...</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Appointment Section (New Theme) -->
+    <section class="appointment-section" id="appointment">
+        <div class="container appointment-container">
+            <div class="row align-items-center g-5">
+                <div class="col-lg-5 fade-right">
+                    <h2 class="appointment-heading">Book an Appointment</h2>
+                    <p class="appointment-subheading mb-5">Schedule a visit with our expert doctors. Fill out the form
+                        and our team will get back to you to confirm your slot.</p>
+
+                    <div class="d-flex align-items-center gap-3 mb-4 text-white">
+                        <div class="bg-white text-primary rounded-circle d-flex align-items-center justify-content-center"
+                            style="width: 50px; height: 50px; font-size: 1.2rem;">
+                            <i class="fa-solid fa-phone"></i>
+                        </div>
+                        <div>
+                            <h5 class="mb-0 text-white">24/7 Helpline</h5>
+                            <p class="mb-0 opacity-75">+91 XXXXX XXXXX</p>
+                        </div>
+                    </div>
+
+                    <div class="d-flex align-items-center gap-3 text-white">
+                        <div class="bg-white text-primary rounded-circle d-flex align-items-center justify-content-center"
+                            style="width: 50px; height: 50px; font-size: 1.2rem;">
+                            <i class="fa-solid fa-clock"></i>
+                        </div>
+                        <div>
+                            <h5 class="mb-0 text-white">Opening Hours</h5>
+                            <p class="mb-0 opacity-75">Mon - Sat: 8:00 AM - 9:00 PM</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-7 fade-left">
+                    <div class="appointment-box">
+                        <h3 class="mb-4 text-primary">Patient Details</h3>
+                        <form id="appointmentForm">
+                            <div class="row g-3">
+                                <div class="col-md-6">
+                                    <input type="text" class="form-control" id="name" placeholder="Full Name" required>
+                                </div>
+                                <div class="col-md-6">
+                                    <input type="tel" class="form-control" id="phone" placeholder="Phone Number"
+                                        required>
+                                </div>
+                                <div class="col-md-6">
+                                    <select class="form-select" id="department" required>
+                                        <option value="" selected disabled>Select Department</option>
+                                        <option value="opthal">Ophthalmology</option>
+                                        <option value="general">General Medicine</option>
+                                        <option value="ortho">Orthopaedics</option>
+                                    </select>
+                                </div>
+                                <div class="col-md-6">
+                                    <input type="date" class="form-control" id="date" required>
+                                </div>
+                                <div class="col-12">
+                                    <textarea class="form-control" id="message" rows="4"
+                                        placeholder="Any message or symptoms..."></textarea>
+                                </div>
+                                <div class="col-12 mt-4">
+                                    <button type="submit" class="btn-premium w-100 py-3 fs-5">Submit Request</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq" class="bg-light">
+        <div class="container">
+            <div class="section-title fade-up">
+                <h2>Frequently Asked Questions</h2>
+                <p>Find answers to common questions about our services, appointments, and facilities.</p>
+            </div>
+
+            <div class="row justify-content-center fade-up">
+                <div class="col-lg-8">
+                    <div class="accordion" id="faqAccordion">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#faq1">
+                                    What are the hospital timings?
+                                </button>
+                            </h2>
+                            <div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    The hospital outpatient department operates from 8:00 AM to 9:00 PM, Monday to
+                                    Saturday. However, our Emergency and Trauma care, including the Pharmacy, operate
+                                    24x7.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#faq2">
+                                    Do you accept health insurance?
+                                </button>
+                            </h2>
+                            <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Yes, we accept major health insurance providers. We have a dedicated cashless claims
+                                    desk to assist you with the TPA process. Please carry your insurance card and valid
+                                    ID proof.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#faq3">
+                                    How can I book an appointment?
+                                </button>
+                            </h2>
+                            <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    You can book an appointment through our website using the appointment form, by
+                                    calling our helpline number, or directly at the hospital reception.
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer" id="contact">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-4 mb-4">
+                    <div class="footer-logo">
+                        <img src="logo.png" alt="VPN Eye Care Logo"
+                            style="max-height: 80px; max-width: 250px; width: auto; object-fit: contain; background: var(--white); border-radius: 8px; padding: 10px;">
+                    </div>
+                    <p>"Care You Can Trust."</p>
+                    <p>Advanced Eye Care & Comprehensive Multispeciality Healthcare serving the community with
+                        excellence and compassion.</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <h4 class="footer-title">Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#doctors">Our Doctors</a></li>
+                        <li><a href="#gallery">Gallery</a></li>
+                        <li><a href="#appointment">Appointment</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <h4 class="footer-title">Departments</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Ophthalmology</a></li>
+                        <li><a href="#">General Medicine</a></li>
+                        <li><a href="#">Orthopaedics</a></li>
+                        <li><a href="#">Emergency</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 mb-4">
+                    <h4 class="footer-title">Contact Info</h4>
+                    <ul class="footer-contact list-unstyled">
+                        <li>
+                            <i class="fa-solid fa-location-dot"></i>
+                            <span>123 Healthcare Avenue,<br>Tamil Nadu, India</span>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-phone"></i>
+                            <span>+91 XXXXX XXXXX<br>+91 XXXXX XXXXX</span>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-envelope"></i>
+                            <span>info@vpneyecare.com</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2026 VPN Eye Care & Multispeciality Hospital. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating Buttons -->
+    <a href="https://wa.me/91XXXXXXXXXX" class="floating-whatsapp" target="_blank" aria-label="Chat on WhatsApp">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
+    <a href="#" class="scroll-top" id="scrollTop" aria-label="Scroll to top">
+        <i class="fa-solid fa-arrow-up"></i>
+    </a>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+
+            // Sticky Navbar
+            const navbar = document.getElementById('navbar');
+            const scrollTopBtn = document.getElementById('scrollTop');
+
+            window.addEventListener('scroll', () => {
+                if (window.scrollY > 50) {
+                    navbar.classList.add('shadow-sm');
+                    scrollTopBtn.classList.add('show');
+                } else {
+                    navbar.classList.remove('shadow-sm');
+                    scrollTopBtn.classList.remove('show');
+                }
+            });
+
+            // Smooth Scrolling
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    const href = this.getAttribute('href');
+                    if (href === '#') {
+                        e.preventDefault();
+                        window.scrollTo({ top: 0, behavior: 'smooth' });
+                        return;
+                    }
+                    const target = document.querySelector(href);
+                    if (target) {
+                        e.preventDefault();
+                        target.scrollIntoView({
+                            behavior: 'smooth',
+                            block: 'start'
+                        });
+                        // Close mobile menu if open
+                        const navbarCollapse = document.querySelector('.navbar-collapse');
+                        if (navbarCollapse.classList.contains('show')) {
+                            const bsCollapse = new bootstrap.Collapse(navbarCollapse);
+                            bsCollapse.hide();
+                        }
+                    }
+                });
+            });
+
+            // Form Validation & Submission
+            const form = document.getElementById('appointmentForm');
+            form.addEventListener('submit', (e) => {
+                e.preventDefault();
+                // Simple validation
+                let isValid = true;
+                const requiredFields = form.querySelectorAll('[required]');
+                requiredFields.forEach(field => {
+                    if (!field.value.trim()) {
+                        isValid = false;
+                        field.classList.add('is-invalid');
+                    } else {
+                        field.classList.remove('is-invalid');
+                    }
+                });
+
+                if (isValid) {
+                    // Show success (simulated)
+                    const btn = form.querySelector('button[type="submit"]');
+                    const originalText = btn.innerHTML;
+                    btn.innerHTML = '<i class="fa-solid fa-check"></i> Request Sent';
+                    btn.classList.add('bg-success');
+                    btn.classList.remove('btn-premium');
+
+                    setTimeout(() => {
+                        btn.innerHTML = originalText;
+                        btn.classList.remove('bg-success');
+                        btn.classList.add('btn-premium');
+                        form.reset();
+                    }, 3000);
+                }
+            });
+
+            // Intersection Observer for scroll animations
+            const animateElements = document.querySelectorAll('.fade-up, .fade-left, .fade-right');
+            const observerOptions = {
+                root: null,
+                rootMargin: '0px',
+                threshold: 0.15
+            };
+
+            let animatedCounters = false;
+
+            const observer = new IntersectionObserver((entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+
+                        // Counter animation trigger
+                        if (entry.target.classList.contains('stat-item') && !animatedCounters) {
+                            animatedCounters = true;
+                            runCounters();
+                        }
+                    }
+                });
+            }, observerOptions);
+
+            animateElements.forEach(el => observer.observe(el));
+
+            // Google Reviews Fetch (Mocked for demonstration - replace with actual Google Places API call)
+            function fetchGoogleReviews() {
+                const container = document.getElementById('googleReviewsContainer');
+
+                // MOCK DATA: Simulating a fetch from Google Places API
+                const mockReviews = [
+                    { name: 'Ramesh Kumar', text: 'I had my cataract surgery at VPN Eye Care. The doctors were incredibly supportive, and the procedure was seamless. Highly recommended!', rating: 5, time: '2 weeks ago', img: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150' },
+                    { name: 'Sunita Devi', text: 'The multispeciality wing is very convenient. I brought my mother for an orthopaedic consultation. Clean hospital and friendly staff.', rating: 5, time: '1 month ago', img: 'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=150' },
+                    { name: 'Vikram Singh', text: 'State of the art facilities and very professional doctors. The emergency response was incredibly fast when we needed it.', rating: 4, time: '3 months ago', img: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=150' },
+                    { name: 'Anita Patel', text: 'Best eye hospital in the city. The LASIK procedure was quick and the post-op care was fantastic. Vision is 20/20 now!', rating: 5, time: '4 months ago', img: 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=150' },
+                    { name: 'Karthik R.', text: 'Very systematic and organized out-patient department. Waiting time was minimal and the diagnosis was precise.', rating: 5, time: '5 months ago', img: 'https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=150' }
+                ];
+
+                // Generate HTML for a single review
+                const generateReviewHTML = (review) => `
+                    <div class="testimonial-card">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/c/c1/Google_%22G%22_logo.svg" alt="Google" class="google-logo">
+                        <div class="stars">
+                            ${'<i class="fa-solid fa-star"></i>'.repeat(review.rating)}
+                        </div>
+                        <p class="testimonial-text">"${review.text}"</p>
+                        <div class="patient-info">
+                            <div class="patient-details">
+                                <h5>${review.name}</h5>
+                                <p>${review.time} on Google</p>
+                            </div>
+                        </div>
+                    </div>
+                `;
+
+                // Render reviews
+                // To create a seamless scrolling marquee, we duplicate the list so it loops flawlessly
+                const renderList = [...mockReviews, ...mockReviews];
+
+                setTimeout(() => { // Simulate network delay
+                    container.innerHTML = renderList.map(generateReviewHTML).join('');
+                }, 1000);
+            }
+
+            fetchGoogleReviews();
+
+
+            // Counter Animation
+            function runCounters() {
+                const counters = document.querySelectorAll('.stat-number');
+                const speed = 200; // The lower the slower
+
+                counters.forEach(counter => {
+                    const updateCount = () => {
+                        const target = +counter.getAttribute('data-target');
+                        const count = +counter.innerText;
+                        const inc = target / speed;
+
+                        if (count < target) {
+                            counter.innerText = Math.ceil(count + inc);
+                            setTimeout(updateCount, 15);
+                        } else {
+                            counter.innerText = target + (counter.getAttribute('data-suffix') || '');
+                        }
+                    };
+                    updateCount();
+                });
+            }
+        });
+
+        // Gallery Modal
+        window.openGalleryModal = function (element) {
+            const imgSrc = element.querySelector('img').src;
+            document.getElementById('modalImage').src = imgSrc;
+            const myModal = new bootstrap.Modal(document.getElementById('galleryModal'));
+            myModal.show();
+        };
+    </script>
+</body>
+
+</html>
