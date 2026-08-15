@@ -1351,6 +1351,7 @@
                 display: flex;
                 align-items: center;
             }
+
             .navbar-brand img {
                 max-width: 100% !important;
             }
@@ -1473,7 +1474,8 @@
     <div class="top-ribbon">
         <div class="container d-flex justify-content-between align-items-center">
             <div>
-                <i class="fa-solid fa-clock me-2"></i> Monday to Saturday, except Sunday: 9:00 AM - 3:00 PM, 6:00 PM - 9:00 PM
+                <i class="fa-solid fa-clock me-2"></i> Monday to Saturday, except Sunday: 9:00 AM - 3:00 PM, 6:00 PM -
+                9:00 PM
             </div>
             <div>
                 <a href="tel:04365221144" class="me-4"><i class="fa-solid fa-phone me-2"></i> 04365 221144</a>
@@ -1767,8 +1769,7 @@
                 <div class="col-lg-4 col-md-6 fade-up">
                     <div class="doctor-card">
                         <div class="doctor-img-wrapper">
-                            <img src="images/Doctors/Doctor%201.jpeg"
-                                alt="Dr. P. Gajendran" class="doctor-img">
+                            <img src="images/Doctors/Doctor%201.jpeg" alt="Dr. P. Gajendran" class="doctor-img">
                             <div class="doctor-social">
                                 <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
                                 <a href="#"><i class="fa-solid fa-envelope"></i></a>
@@ -1785,8 +1786,7 @@
                 <div class="col-lg-4 col-md-6 fade-up" style="transition-delay: 0.1s;">
                     <div class="doctor-card">
                         <div class="doctor-img-wrapper">
-                            <img src="images/Doctors/Doctor%202.jpeg"
-                                alt="Dr. Sathya" class="doctor-img">
+                            <img src="images/Doctors/Doctor%202.jpeg" alt="Dr. Sathya" class="doctor-img">
                             <div class="doctor-social">
                                 <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
                                 <a href="#"><i class="fa-solid fa-envelope"></i></a>
@@ -1803,8 +1803,7 @@
                 <div class="col-lg-4 col-md-6 fade-up" style="transition-delay: 0.2s;">
                     <div class="doctor-card">
                         <div class="doctor-img-wrapper">
-                            <img src="images/Doctors/Doctor%203.jpeg"
-                                alt="Dr. M K Dinesh Kumar" class="doctor-img">
+                            <img src="images/Doctors/Doctor%203.jpeg" alt="Dr. M K Dinesh Kumar" class="doctor-img">
                             <div class="doctor-social">
                                 <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
                                 <a href="#"><i class="fa-solid fa-envelope"></i></a>
@@ -1965,7 +1964,8 @@
                         </div>
                         <div>
                             <h5 class="mb-0 text-white">Opening Hours</h5>
-                            <p class="mb-0 opacity-75">Monday to Saturday, except Sunday: 9:00 AM - 3:00 PM, 6:00 PM - 9:00 PM</p>
+                            <p class="mb-0 opacity-75">Monday to Saturday, except Sunday: 9:00 AM - 3:00 PM, 6:00 PM -
+                                9:00 PM</p>
                         </div>
                     </div>
                 </div>
@@ -1975,13 +1975,16 @@
                         <h3 class="mb-4 text-primary">Patient Details</h3>
                         <form action="https://api.web3forms.com/submit" method="POST" id="appointmentForm">
                             <input type="hidden" name="access_key" value="78df163f-2865-4542-a273-fe43eb5ad879">
+                            <input type="hidden" name="subject" value="New Appointment Request from VPN Eye Care Website">
+                            <input type="hidden" name="from_name" value="VPN Eye Care Notifications">
                             <div class="row g-3">
                                 <div class="col-md-6">
-                                    <input type="text" name="name" class="form-control" id="name" placeholder="Full Name" required>
+                                    <input type="text" name="name" class="form-control" id="name"
+                                        placeholder="Full Name" required>
                                 </div>
                                 <div class="col-md-6">
-                                    <input type="tel" name="phone" class="form-control" id="phone" placeholder="Phone Number"
-                                        required>
+                                    <input type="tel" name="phone" class="form-control" id="phone"
+                                        placeholder="Phone Number" required>
                                 </div>
                                 <div class="col-md-6">
                                     <select name="department" class="form-select" id="department" required>
@@ -2029,8 +2032,10 @@
                             </h2>
                             <div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
                                 <div class="accordion-body">
-                                    The hospital outpatient department operates from 9:00 AM to 3:00 PM, and 6:00 PM to 9:00 PM, Monday to
-                                    Saturday, except Sunday. However, our Emergency and Trauma care, including the Pharmacy, operate
+                                    The hospital outpatient department operates from 9:00 AM to 3:00 PM, and 6:00 PM to
+                                    9:00 PM, Monday to
+                                    Saturday, except Sunday. However, our Emergency and Trauma care, including the
+                                    Pharmacy, operate
                                     24x7.
                                 </div>
                             </div>
@@ -2115,7 +2120,8 @@
                     <ul class="footer-contact list-unstyled">
                         <li>
                             <i class="fa-solid fa-location-dot"></i>
-                            <span>No 25, Opposite LIC, Neela West Estate,<br>Velippalayam, Nagapattinam-611001, Tamil Nadu</span>
+                            <span>No 25, Opposite LIC, Neela West Estate,<br>Velippalayam, Nagapattinam-611001, Tamil
+                                Nadu</span>
                         </li>
                         <li>
                             <i class="fa-solid fa-phone"></i>
@@ -2311,7 +2317,44 @@
             }
         });
 
+        
+        // Web3Forms AJAX Submission
+        document.getElementById('appointmentForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const form = e.target;
+            const formData = new FormData(form);
+            const btn = form.querySelector('button[type="submit"]');
+            const originalText = btn.innerText;
+            
+            btn.innerText = 'Submitting...';
+            btn.disabled = true;
+
+            fetch('https://api.web3forms.com/submit', {
+                    method: 'POST',
+                    body: formData
+                })
+                .then(async (response) => {
+                    let json = await response.json();
+                    if (response.status == 200) {
+                        alert('Appointment request submitted successfully! We will contact you shortly.');
+                        form.reset();
+                    } else {
+                        console.log(response);
+                        alert(json.message || 'Something went wrong!');
+                    }
+                })
+                .catch(error => {
+                    console.log(error);
+                    alert('Something went wrong!');
+                })
+                .finally(() => {
+                    btn.innerText = originalText;
+                    btn.disabled = false;
+                });
+        });
+        
         // Gallery Modal
+
         window.openGalleryModal = function (element) {
             const imgSrc = element.querySelector('img').src;
             document.getElementById('modalImage').src = imgSrc;
